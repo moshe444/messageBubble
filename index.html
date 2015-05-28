@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>messageBubbleGenerator</title>
+		<link rel="stylesheet" type="text/css" href="css/messageBubble.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tmpl.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/plogo.png"/>
+			</div>
+			Message Bubble Generator
+		</div>
+		
+		<pre>
+			$(".demo").mbg({
+				messageWidth: 300,
+				messageHeight: 100,
+				borderColor: "285171",
+				bgColor: "dad4d9",
+				borderWidth: 5,
+				bubbleWidth: 30,
+				bubbleHeight: 60
+			});
+		</pre>
+		
+		<div class="displayArea">
+			<div class="demo"></div>	
+		</div>
+		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/messageBubble.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".demo").mbg({
+					messageWidth: 300,
+					messageHeight: 100,
+					borderColor: "285171",
+					bgColor: "dad4d9",
+					borderWidth: 5,
+					bubbleWidth: 30,
+					bubbleHeight: 60
+				});
+				$(".demo").width($(".demo").find(".mb-wrapper").width());
+			});
+		</script>
+	</body>
+</html>
