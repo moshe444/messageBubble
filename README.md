@@ -77,4 +77,4 @@
 </table>
 DEMO：
 ----------
-<a href="#">http://moshe444.github.io/messageBubble/</a>
+<a href="http://moshe444.github.io/messageBubble/">http://moshe444.github.io/messageBubble/</a>
